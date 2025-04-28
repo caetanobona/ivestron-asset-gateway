@@ -1,22 +1,27 @@
 
-import React, { useRef } from 'react';
+import React from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import TradingInterface from '@/components/TradingInterface';
 import AssetHighlight from '@/components/AssetHighlight';
 import AssetButtons from '@/components/AssetButtons';
+import SimplifiedTradingSection from '@/components/SimplifiedTradingSection';
+import SimplifiedPlatformSection from '@/components/SimplifiedPlatformSection';
+import BenefitsSection from '@/components/BenefitsSection';
 import DepositSection from '@/components/DepositSection';
 
 const Index = () => {
-
   return (
     <div className="min-h-screen flex flex-col bg-stone-950 text-white">
       <Navbar />
       <main>
         <HeroSection />
         <TradingInterface />
+        <SimplifiedTradingSection />
+        <SimplifiedPlatformSection />
         <AssetHighlight />
         <AssetButtons />
+        <BenefitsSection />
         <DepositSection />
       </main>
       <footer className="bg-ivestron-bg-logo py-10 border-t border-white/10">
