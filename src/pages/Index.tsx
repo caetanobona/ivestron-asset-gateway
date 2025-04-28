@@ -10,7 +10,7 @@ import DepositSection from '@/components/DepositSection';
 const Index = () => {
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-ivestron-bg text-white">
       <Navbar />
       <main>
         <HeroSection />
@@ -19,13 +19,16 @@ const Index = () => {
         <AssetButtons />
         <DepositSection />
       </main>
-      <footer className="bg-white py-10 border-t">
+      <footer className="bg-ivestron-bg-dark py-10 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center">
-            <div className="w-8 h-8 rounded-md bg-ivestron-blue flex items-center justify-center text-white text-sm font-bold">I</div>
-            <span className="ml-2 font-bold text-lg">IVESTRON</span>
+            <img 
+              src="/lovable-uploads/795bb033-d644-4c19-be37-6a0ba0fa84d9.png" 
+              alt="IVESTRON"
+              className="h-6 w-auto"
+            />
           </div>
-          <p className="text-gray-500 text-sm mt-4">
+          <p className="text-gray-400 text-sm mt-4">
             © 2025 IVESTRON. Todos os direitos reservados.
           </p>
         </div>
