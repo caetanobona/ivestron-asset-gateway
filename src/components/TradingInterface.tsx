@@ -22,7 +22,7 @@ const AssetCard: React.FC<AssetCardProps> = ({
   };
 
   return (
-    <div className={`${positionClasses[position as keyof typeof positionClasses]} bg-black/90 text-white rounded-xl p-4 w-44 h-36 shadow-lg`}>
+    <div className={`${positionClasses[position as keyof typeof positionClasses]} bg-black/90 text-white rounded-xl p-4 w-44 h-[168px] shadow-lg`}>
       <div className="flex items-center mb-2">
         <div className="w-8 h-8 mr-2 rounded-full flex items-center justify-center bg-white/10">
           {logo}

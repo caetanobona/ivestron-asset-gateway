@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useRef } from 'react';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import TradingInterface from '@/components/TradingInterface';
@@ -8,6 +8,7 @@ import AssetButtons from '@/components/AssetButtons';
 import DepositSection from '@/components/DepositSection';
 
 const Index = () => {
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
