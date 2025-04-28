@@ -3,16 +3,16 @@ import React from 'react';
 
 const AssetHighlight = () => {
   return (
-    <section id="assets" className="py-16 md:py-20 bg-white">
+    <section id="assets" className="py-16 md:py-20 bg-stone-950">
       <div className="flex flex-col max-w-5xl mx-auto px-6 text-center">
-        <div className='flex flex-row'>
-          <h2 className="text- md:text-5xl font-bold mb-8">
-            <span className="text-ivestron-blue md:text-9xl">+200</span>
+        <div className='lg:flex lg:flex-row justify-center items-center'>
+          <h2 className="text- md:text-5xl font-bold justify-center items-center">
+            <span className="text-ivestron-blue text-9xl">+200</span>
             <br />
           </h2>
-          <h2 className='text-4xl font-bold'>
-            <span className="text-ivestron-blue">Ativos para investir</span>
-              <br />
+          <h2 className='text-4xl font-bold mb-4 lg:mb-0'>
+            <span className="text-ivestron-blue">Ativos para investir </span>
+              
             <span>deforma totalmente descomplicada</span>
           </h2>
         </div>

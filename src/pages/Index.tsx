@@ -10,7 +10,7 @@ import DepositSection from '@/components/DepositSection';
 const Index = () => {
 
   return (
-    <div className="min-h-screen flex flex-col bg-ivestron-bg text-white">
+    <div className="min-h-screen flex flex-col bg-stone-950 text-white">
       <Navbar />
       <main>
         <HeroSection />

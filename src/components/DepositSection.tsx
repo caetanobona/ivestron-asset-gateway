@@ -4,7 +4,7 @@ import { ArrowUpCircle, DollarSign } from 'lucide-react';
 
 const DepositSection = () => {
   return (
-    <section className="py-16 md:py-20 bg-gray-50">
+    <section className="py-16 md:py-20 bg-stone-950">
       <div className="max-w-5xl mx-auto px-6 text-center">
         {/* Circular Icon */}
         <div className="w-14 h-14 mx-auto mb-6 bg-white rounded-full shadow-md flex items-center justify-center">

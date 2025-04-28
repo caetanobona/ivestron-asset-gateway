@@ -9,7 +9,7 @@ interface AssetButtonProps {
 
 const AssetButton: React.FC<AssetButtonProps> = ({ logo, name, color }) => {
   return (
-    <button className="bg-white rounded-2xl shadow-md py-4 px-5 flex items-center min-w-40 hover:shadow-lg transition-shadow">
+    <button className="bg-stone-900 rounded-2xl shadow-md py-4 px-5 flex items-center min-w-40 hover:shadow-lg transition-shadow">
       <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${color}`}>
         {logo}
       </div>

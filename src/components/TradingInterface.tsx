@@ -1,8 +1,11 @@
 
+import { Bitcoin, Icon, IconNode } from 'lucide-react';
+import { FcGoogle } from "react-icons/fc"
+import { FaMeta } from 'react-icons/fa6';
 import React from 'react';
 
 interface AssetCardProps {
-  logo: string;
+  iconKey: string;
   name: string;
   profit: string;
   price: string;
@@ -12,27 +15,39 @@ interface AssetCardProps {
 }
 
 const AssetCard: React.FC<AssetCardProps> = ({ 
-  logo, name, profit, price, change, isPositive, position 
+  iconKey, name, profit, price, change, isPositive, position 
 }) => {
   // Position classes for the different card positions
   const positionClasses = {
-    'top-left': 'absolute top-8 left-8',
-    'bottom-left': 'absolute bottom-8 left-8',
-    'right': 'absolute top-1/2 -translate-y-1/2 right-8',
+    'top-left': 'absolute top-8 left-[86px] lg:left-36',
+    'bottom-left': 'absolute bottom-8 left-36 lg:left-56',
+    'right': 'absolute top-36 lg:top1/2 -translate-y-1/2 right-2 lg:right-8',
   };
 
+  const iconMap = {
+    'Google' : FcGoogle,
+    'Bitcoin' : Bitcoin,
+    'Meta' : FaMeta
+  }
+
+  function DynamicIcon({ name, ...props }) {  
+    const IconComponent = iconMap[name];  
+    if (!IconComponent) return null;  
+    return <IconComponent {...props} />;  
+  }
+
   return (
-    <div className={`${positionClasses[position as keyof typeof positionClasses]} bg-black/90 text-white rounded-xl p-4 w-44 h-[168px] shadow-lg`}>
+    <div className={`${positionClasses[position as keyof typeof positionClasses]} bg-black/90 text-white rounded-xl p-4 w-22 lg:w-44 h-[168px] shadow-lg`}>
       <div className="flex items-center mb-2">
         <div className="w-8 h-8 mr-2 rounded-full flex items-center justify-center bg-white/10">
-          {logo}
+          <DynamicIcon name={iconKey} />
         </div>
-        <span className="font-bold">{name}</span>
+        <span className="font-bold left">{name}</span>
       </div>
       
       <div className="mt-2">
         <div className="text-gray-300 text-sm">Lucro</div>
-        <div className="text-ivestron-blue text-2xl font-bold">{profit}</div>
+        <div className="text-green-500 text-2xl font-bold">{profit}</div>
       </div>
       
       <div className="flex justify-between items-center mt-2">
@@ -41,7 +56,7 @@ const AssetCard: React.FC<AssetCardProps> = ({
           <div className="font-medium">{price}</div>
         </div>
         
-        <div className={`text-sm ${isPositive ? 'text-ivestron-blue' : 'text-red-500'}`}>
+        <div className={`text-sm ${isPositive ? 'text-green-500' : 'text-red-500'}`}>
           {change}
         </div>
       </div>
@@ -103,7 +118,7 @@ const TradingInterface = () => {
           
           {/* Asset Cards */}
           <AssetCard 
-            logo="M"
+            iconKey="Meta"
             name="Meta"
             profit="190%"
             price="577.62"
@@ -113,7 +128,7 @@ const TradingInterface = () => {
           />
           
           <AssetCard 
-            logo="G"
+            iconKey="Google"
             name="Google"
             profit="190%"
             price="120.85"
@@ -123,7 +138,7 @@ const TradingInterface = () => {
           />
           
           <AssetCard 
-            logo="₿"
+            iconKey="Bitcoin"
             name="Bitcoin"
             profit="192%"
             price="62788.64"

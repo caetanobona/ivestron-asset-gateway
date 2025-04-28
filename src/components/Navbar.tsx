@@ -24,7 +24,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="w-full bg-ivestron-bg shadow-lg border-b border-white/10 py-6 px-10 md:px-12 lg:px-16 sticky top-0 z-50">
+    <nav className="w-full bg-[#0f0f11] shadow-lg border-b border-white/10 py-6 px-10 md:px-12 lg:px-16 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
           {/* Logo */}
@@ -32,12 +32,12 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/795bb033-d644-4c19-be37-6a0ba0fa84d9.png" 
               alt="IVESTRON"
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </div>
           
           {/* Navigation links */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden lg:flex space-x-8">
             <a href="#" className="font-medium text-white/80 hover:text-ivestron-blue transition-colors">Início</a>
             <a href="#" className="font-medium text-white/80 hover:text-ivestron-blue transition-colors">Ativos</a>
             <a href="#" className="font-medium text-white/80 hover:text-ivestron-blue transition-colors">Agilidade</a>

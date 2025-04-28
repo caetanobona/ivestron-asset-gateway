@@ -5,11 +5,11 @@ import { ArrowDown } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="bg-gray-50 py-20 md:py-24 lg:py-32">
+    <section className="bg-stone-950 py-20 md:py-24 lg:py-32">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          Uma só corretora, <br />
-          <span>inúmeras <span className="text-ivestron-blue">oportunidades</span></span>
+        <h1 className="text-4xl md:text-6xl mb-6">
+          <span className='font-bold'>Uma só corretora</span>, <br />
+          <span>inúmeras <span className="text-ivestron-blue font-bold">oportunidades</span></span>
         </h1>
         
         <p className="text-ivestron-text-gray text-lg md:text-xl mb-10 max-w-3xl mx-auto">
