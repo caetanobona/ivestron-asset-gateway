@@ -47,12 +47,6 @@ const Navbar = () => {
         
         {/* Right section: Language and Authentication */}
         <div className="flex items-center space-x-6">
-          {/* Language selector */}
-          <div className="hidden md:flex items-center cursor-pointer text-white/80">
-            <Globe size={16} />
-            <span className="mx-2">Português</span>
-            <ChevronDown size={16} />
-          </div>
           
           {/* Authentication buttons */}
           <a href="#" className="hidden md:block text-white/80 hover:text-ivestron-blue transition-colors">Acessar</a>

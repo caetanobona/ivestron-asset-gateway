@@ -66,7 +66,7 @@ const AssetCard: React.FC<AssetCardProps> = ({
 
 const TradingInterface = () => {
   return (
-    <section className="py-12 px-6 relative">
+    <section className="py-12 lg:py-6 px-6 relative">
       <div className="max-w-6xl mx-auto relative">
         {/* Main Trading Interface */}
         <div className="bg-gray-900 rounded-2xl shadow-xl relative overflow-hidden h-[500px] md:h-[600px]">

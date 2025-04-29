@@ -1,5 +1,11 @@
 
 import React from 'react';
+import { CarouselItem, ContinuousCarousel } from './ContinuousCarousel';
+import { FaAmazon, FaEthereum, FaMeta } from 'react-icons/fa6';
+import { SiCocacola, SiDogecoin } from 'react-icons/si'
+import { MdOutlineOilBarrel } from 'react-icons/md';
+import { TbBrandDisney } from 'react-icons/tb';
+import { AiFillGold } from 'react-icons/ai';
 
 interface AssetButtonProps {
   logo: string;
@@ -19,30 +25,19 @@ const AssetButton: React.FC<AssetButtonProps> = ({ logo, name, color }) => {
 };
 
 const AssetButtons = () => {
-  const assets = [
-    { logo: "M", name: "Meta", color: "bg-blue-500 text-white" },
-    { logo: "D", name: "Doge", color: "bg-yellow-400 text-white" },
-    { logo: "O", name: "Oil Brent", color: "bg-black text-white" },
-    { logo: "A", name: "Amazon.com Inc.", color: "bg-orange-500 text-white" },
-    { logo: "O", name: "Ouro", color: "bg-yellow-500 text-white" },
-    { logo: "C", name: "Coca-Cola Company", color: "bg-red-600 text-white" },
+  const assets : CarouselItem[] = [
+    { icon: <FaMeta color='black'/>, label: "Meta" },
+    { icon: <SiDogecoin color='black'/>, label: "Doge" },
+    { icon: <MdOutlineOilBarrel color='black'/>, label: "Oil Brent" },
+    { icon: <FaAmazon color='black'/>, label: "Amazon.com Inc." },
+    { icon: <AiFillGold color='black'/>, label: "Ouro" },
+    { icon: <SiCocacola color='black'/>, label: "Coca-Cola Company" },
+    { icon: <FaEthereum color='black'/>, label: "Ethereum" },
+    { icon: <TbBrandDisney color='black'/>, label: "Walt Disney Company" }
   ];
 
   return (
-    <section className="py-10 pb-24 px-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-          {assets.map((asset, index) => (
-            <AssetButton 
-              key={index}
-              logo={asset.logo}
-              name={asset.name}
-              color={asset.color}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
+    <ContinuousCarousel items={assets}/>
   );
 };
 

@@ -100,8 +100,8 @@ const SimplifiedTradingSection = () => {
               seus lucros imediatamente!
             </p>
             
-            <div className="flex items-center gap-6">
-              <Button className="bg-ivestron-blue hover:bg-ivestron-blue-dark text-white px-8 py-6 rounded-md">
+            <div className="flex-col flex items-center gap-6 lg:flex-row">
+              <Button className="bg-ivestron-blue w-full text-md hover:bg-ivestron-blue-dark text-white px-8 py-6 rounded-md lg:w-auto">
                 Comece Agora
               </Button>
               
