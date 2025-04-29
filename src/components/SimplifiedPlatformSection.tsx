@@ -22,7 +22,7 @@ const SimplifiedPlatformSection = () => {
               não se perder e nem ter medo de começar!
             </p>
             
-            <Button className="bg-ivestron-blue hover:bg-ivestron-blue-dark text-white px-8 py-6 rounded-md">
+            <Button className="bg-ivestron-blue hover:bg-ivestron-blue-dark text-white px-8 py-6 rounded-md text-md w-full lg:w-auto">
               Comece Agora
             </Button>
           </div>
@@ -31,11 +31,8 @@ const SimplifiedPlatformSection = () => {
           <div className="w-full lg:w-1/2 mt-10 lg:mt-0 relative">
             <div className="relative z-10 max-w-md mx-auto">
               <div className="bg-stone-900 p-6 rounded-2xl border border-stone-800 shadow-xl">
-                <div className="flex justify-between items-center mb-8">
-                  <h3 className="text-xl font-semibold">Tutoriais</h3>
-                  <div className="w-8 h-8 bg-stone-800 rounded-full flex items-center justify-center">
-                    <span className="text-lg">&times;</span>
-                  </div>
+                <div className="flex justify-center items-center mb-8">
+                  <h3 className="text-xl font-semibold ">Tutoriais</h3>
                 </div>
                 
                 {/* Tutorial Items */}
@@ -61,7 +58,9 @@ const SimplifiedPlatformSection = () => {
                   </div>
                   
                   <div className="mt-6 mb-4">
-                    <div className="text-sm font-medium mb-4">Video tutorais</div>
+                    <div className='justify-center items-center'>
+                      <div className="text-sm font-medium mb-4">Video tutorais</div>
+                    </div>
                     
                     <div className="bg-stone-800 rounded-xl p-4 flex items-center">
                       <div className="w-10 h-10 bg-stone-700 rounded-full flex items-center justify-center mr-3">

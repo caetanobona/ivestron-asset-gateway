@@ -1,9 +1,10 @@
 
 import React from 'react';
 import { CheckCircle, ChevronRight } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
-const BenefitCard = ({ title, description, icon }: { title: string; description: string; icon: React.ReactNode }) => (
-  <div className="bg-stone-900 rounded-xl p-6 border border-stone-800">
+const BenefitCard = ({ title, description, icon, className }: { title: string; description: string; icon: React.ReactNode, className?:string }) => (
+  <div className={cn("bg-stone-900 rounded-xl p-6 border border-stone-800", className)}>
     <div className="text-ivestron-blue mb-4">
       {icon}
     </div>
@@ -59,6 +60,7 @@ const BenefitsSection = () => {
           
           <BenefitCard 
             title="Suporte 24/7"
+            className=''
             description="Nossa equipe de especialistas está disponível para ajudar com qualquer dúvida ou problema."
             icon={<CheckCircle size={32} />}
           />
