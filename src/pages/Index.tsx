@@ -9,6 +9,10 @@ import SimplifiedTradingSection from '@/components/SimplifiedTradingSection';
 import SimplifiedPlatformSection from '@/components/SimplifiedPlatformSection';
 import BenefitsSection from '@/components/BenefitsSection';
 import DepositSection from '@/components/DepositSection';
+import AchievementsSection from '@/components/AchievementsSection';
+import ToolsFeaturesSection from '@/components/ToolsFeaturesSection';
+import NewsCalendarSection from '@/components/NewsCalendarSection';
+import SimpleStepsSection from '@/components/SimpleStepsSection';
 import MockTradeEntry from '@/components/MockTradeEntry';
 
 const Index = () => {
@@ -21,7 +25,11 @@ const Index = () => {
         <AssetHighlight />
         <AssetButtons />
         <DepositSection />
+        <AchievementsSection />
         <SimplifiedTradingSection />
+        <ToolsFeaturesSection />
+        <NewsCalendarSection />
+        <SimpleStepsSection />
         <SimplifiedPlatformSection />
         <BenefitsSection />
       </main>
