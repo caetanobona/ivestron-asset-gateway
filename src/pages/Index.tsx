@@ -9,6 +9,7 @@ import SimplifiedTradingSection from '@/components/SimplifiedTradingSection';
 import SimplifiedPlatformSection from '@/components/SimplifiedPlatformSection';
 import BenefitsSection from '@/components/BenefitsSection';
 import DepositSection from '@/components/DepositSection';
+import MockTradeEntry from '@/components/MockTradeEntry';
 
 const Index = () => {
   return (
@@ -17,12 +18,12 @@ const Index = () => {
       <main>
         <HeroSection />
         <TradingInterface />
-        <SimplifiedTradingSection />
-        <SimplifiedPlatformSection />
         <AssetHighlight />
         <AssetButtons />
-        <BenefitsSection />
         <DepositSection />
+        <SimplifiedTradingSection />
+        <SimplifiedPlatformSection />
+        <BenefitsSection />
       </main>
       <footer className="bg-ivestron-bg-logo py-10 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 text-center">
