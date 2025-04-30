@@ -60,13 +60,13 @@ export default function MockTradeEntry({className, title, titleColor} : MockTrad
               </label>
               <div className="flex items-center bg-gray-100 rounded-md px-3 py-2 space-x-2 lg:space-x-3">
                 <span
-                  className="text-lg text-gray-700"
+                  className="text-md lg:text-lg text-gray-700"
                   role="img"
                   aria-label="clock"
                 >
                   ⏰
                 </span>
-                <span className="text-lg font-medium text-gray-900">
+                <span className="text-md lg:text-lg font-medium text-gray-900">
                   10m
                 </span>
                 <button
@@ -88,7 +88,7 @@ export default function MockTradeEntry({className, title, titleColor} : MockTrad
           {/* Action Button */}
           <button
             type="button"
-            className="mt-6 w-full py-3 bg-gray-900 text-white rounded-md text-base font-medium hover:opacity-90 transition-opacity"
+            className="mt-4 w-full py-3 bg-gray-900 text-white rounded-md text-base font-medium hover:opacity-90 transition-opacity"
           >
             Vender
           </button>

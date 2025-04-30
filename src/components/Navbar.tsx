@@ -28,11 +28,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
           {/* Logo */}
-          <div className="flex items-center mr-12">
+          <div className="flex items-center mr-4 lg:mr-12">
             <img 
               src="/lovable-uploads/795bb033-d644-4c19-be37-6a0ba0fa84d9.png" 
               alt="IVESTRON"
-              className="h-12 w-auto"
+              className="h-12 w-full"
             />
           </div>
           
