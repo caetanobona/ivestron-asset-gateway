@@ -13,6 +13,7 @@ import AchievementsSection from '@/components/AchievementsSection';
 import ToolsFeaturesSection from '@/components/ToolsFeaturesSection';
 import NewsCalendarSection from '@/components/NewsCalendarSection';
 import SimpleStepsSection from '@/components/SimpleStepsSection';
+import FaqSection from '@/components/FaqSection';
 
 const Index = () => {
   return (
@@ -31,6 +32,7 @@ const Index = () => {
         <NewsCalendarSection />
         <SimpleStepsSection />
         <BenefitsSection />
+        <FaqSection />
       </main>
       <footer className="bg-ivestron-bg-logo py-10 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-6 text-center">
