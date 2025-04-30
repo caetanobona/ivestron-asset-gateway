@@ -86,7 +86,7 @@ const SimplifiedTradingSection = () => {
           </div>
           
           {/* Content */}
-          <div className="w-full lg:w-1/2 mt-4 lg:mt-0">
+          <div className="w-full lg:w-1/2 mt-4 lg:mt-0 text-center lg:text-start">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               <span>Faça </span>
               <span className="text-ivestron-blue">trading </span>

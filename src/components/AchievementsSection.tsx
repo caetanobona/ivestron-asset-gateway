@@ -73,7 +73,7 @@ const AchievementsSection = () => {
             <TestimonialCard
               name="Angela Doncato"
               age={20}
-              testimonial="Sou iniciante apenas copio as operacoes de outros traders, já usei outras corretoras mas escolhi a IVESTRON por que as ordens sao instantaneas, e nunca tive problemas de saque."
+              testimonial="Sou iniciante apenas copio as operações de outros traders, já usei outras corretoras mas escolhi a Ivestron por que as ordens são instantâneas, e nunca tive problemas de saque."
               rating={4}
             />
           </div>
@@ -82,7 +82,7 @@ const AchievementsSection = () => {
             <TestimonialCard
               name="Nicolas Alves"
               age={33}
-              testimonial="Eu comecei a fazer minhas operações na avalon no ano passado, de lá até aqui eu já lucrei mais de 10 salários só aplicando as estratégias dos grupos! Claro que sempre tem risco, mas investindo com calma é sempre sucesso."
+              testimonial="Eu comecei a fazer minhas operações na Ivestron no ano passado, de lá até aqui eu já lucrei mais de 10 salários só aplicando as estratégias dos grupos! Claro que sempre tem risco, mas investindo com calma é sempre sucesso."
               rating={5}
             />
             
