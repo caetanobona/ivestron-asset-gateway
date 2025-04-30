@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Settings, Bell } from 'lucide-react';
 import AlertCard from './AlertCard';
@@ -6,7 +5,7 @@ import AutoFinalizeCard from './AutoFinalizeCard';
 
 const ToolsFeaturesSection = () => {
   return (
-    <section className="pb-6 pt-16 md:pt-24 bg-stone-950">
+    <section id="tools" className="pb-6 pt-16 md:pt-24 bg-stone-950">
       <div className="max-w-6xl mx-auto px-6">
         <div className="lg:flex lg:items-start lg:gap-12">
           {/* Left column */}

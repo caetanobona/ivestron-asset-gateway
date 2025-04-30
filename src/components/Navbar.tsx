@@ -1,27 +1,14 @@
 
-import React, { MouseEventHandler, useRef } from 'react';
-import { Globe, ChevronDown } from 'lucide-react';
+import React from 'react';
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
-  const sectionsRefs = {
-    'inicio' : useRef(null),
-    'ativos' : useRef(null),
-    'agilidade' : useRef(null),
-    'ferramentas'  : useRef(null)
-  }
-
-  const scrollInto = (event, route : string) => {
-    event.preventDefault()
-
-    const section = sectionsRefs[route];
-
-    if(section == null) {
-      return
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
-
-    section.scrollIntoView()
-  }
+  };
 
   return (
     <nav className="w-full bg-[#0f0f11] shadow-lg border-b border-white/10 py-6 px-10 md:px-12 lg:px-16 sticky top-0 z-50">
@@ -38,10 +25,34 @@ const Navbar = () => {
           
           {/* Navigation links */}
           <div className="hidden lg:flex space-x-8">
-            <a href="#" className="font-medium text-white/80 hover:text-ivestron-blue transition-colors">Início</a>
-            <a href="#" className="font-medium text-white/80 hover:text-ivestron-blue transition-colors">Ativos</a>
-            <a href="#" className="font-medium text-white/80 hover:text-ivestron-blue transition-colors">Agilidade</a>
-            <a href="#" className="font-medium text-white/80 hover:text-ivestron-blue transition-colors">Ferramentas</a>
+            <a 
+              href="#hero" 
+              onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} 
+              className="font-medium text-white/80 hover:text-ivestron-blue transition-colors"
+            >
+              Início
+            </a>
+            <a 
+              href="#assets" 
+              onClick={(e) => { e.preventDefault(); scrollToSection('assets'); }} 
+              className="font-medium text-white/80 hover:text-ivestron-blue transition-colors"
+            >
+              Ativos
+            </a>
+            <a 
+              href="#agility" 
+              onClick={(e) => { e.preventDefault(); scrollToSection('agility'); }} 
+              className="font-medium text-white/80 hover:text-ivestron-blue transition-colors"
+            >
+              Agilidade
+            </a>
+            <a 
+              href="#tools" 
+              onClick={(e) => { e.preventDefault(); scrollToSection('tools'); }} 
+              className="font-medium text-white/80 hover:text-ivestron-blue transition-colors"
+            >
+              Ferramentas
+            </a>
           </div>
         </div>
         
