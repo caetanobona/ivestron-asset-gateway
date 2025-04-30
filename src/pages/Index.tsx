@@ -25,12 +25,12 @@ const Index = () => {
         <AssetHighlight />
         <AssetButtons />
         <DepositSection />
-        <AchievementsSection />
         <SimplifiedTradingSection />
+        <SimplifiedPlatformSection />
+        <AchievementsSection />
         <ToolsFeaturesSection />
         <NewsCalendarSection />
         <SimpleStepsSection />
-        <SimplifiedPlatformSection />
         <BenefitsSection />
       </main>
       <footer className="bg-ivestron-bg-logo py-10 border-t border-white/10">

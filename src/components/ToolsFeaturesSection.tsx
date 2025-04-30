@@ -1,10 +1,12 @@
 
 import React from 'react';
 import { Settings, Bell } from 'lucide-react';
+import AlertCard from './AlertCard';
+import AutoFinalizeCard from './AutoFinalizeCard';
 
 const ToolsFeaturesSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-stone-950">
+    <section className="pb-6 pt-16 md:pt-24 bg-stone-950">
       <div className="max-w-6xl mx-auto px-6">
         <div className="lg:flex lg:items-start lg:gap-12">
           {/* Left column */}
@@ -17,10 +19,10 @@ const ToolsFeaturesSection = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-2">
                 Ferramentas
               </h2>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                favoritas <span className="text-ivestron-blue">dos</span>
+              <h2 className="text-4xl md:text-5xl mb-2">
+                <span className='font-bold'>favoritas</span> dos
               </h2>
-              <h2 className="text-4xl md:text-5xl font-bold mb-8">
+              <h2 className="text-4xl md:text-5xl mb-8">
                 especialistas
               </h2>
               
@@ -31,48 +33,16 @@ const ToolsFeaturesSection = () => {
           </div>
           
           {/* Right column */}
-          <div className="lg:w-1/2">
-            <div className="bg-stone-900 border border-white/5 rounded-xl p-6 mb-6">
-              <div className="mb-6">
-                <img 
-                  src="/lovable-uploads/16683ae9-ae5b-4f89-a7a6-e12fc3d42a2c.png" 
-                  alt="Bitcoin chart" 
-                  className="w-full h-auto rounded"
-                />
-              </div>
-              
-              <h3 className="text-2xl font-bold mb-2">
-                <span className="text-ivestron-blue">Ative o Alerta</span> para movimento de preço
-              </h3>
-              
-              <p className="text-ivestron-text-gray">
-                Não perca o momento certo de fazer sua compra ou sua venda, ative o alerta e sempre iremos te avisar quando o seu valor esperado for atingido.
-              </p>
+          <div className="">
+            <div className="mb-6">
+              <AlertCard /> 
             </div>
             
-            <div className="bg-stone-900 border border-white/5 rounded-xl p-6">
-              <div className="lg:flex lg:gap-6">
-                <div className="lg:w-1/2 mb-6 lg:mb-0">
-                  <img 
-                    src="/lovable-uploads/16683ae9-ae5b-4f89-a7a6-e12fc3d42a2c.png" 
-                    alt="Trading chart" 
-                    className="w-full h-auto rounded"
-                  />
-                </div>
-                
-                <div className="lg:w-1/2">
-                  <h3 className="text-2xl font-bold mb-2">
-                    Finalize as suas operações <span className="text-ivestron-blue">automaticamente</span>
-                  </h3>
-                  
-                  <p className="text-ivestron-text-gray">
-                    Determine os momentos corretos para que seus investimentos seja encerrados e aumente a suas chances de lucrar, minimizando seus riscos.
-                  </p>
-                </div>
-              </div>
-            </div>
+            
           </div>
+          
         </div>
+        <AutoFinalizeCard />
       </div>
     </section>
   );

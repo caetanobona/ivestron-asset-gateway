@@ -5,7 +5,7 @@ import { ArrowDown } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="bg-stone-950 py-20 md:py-24 lg:pt-32 lg:pb-12">
+    <section className="bg-stone-950 pt-10 lg:pt-32 lg:pb-12">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-6xl mb-6">
           <span className='font-bold'>Uma só corretora</span>, <br />

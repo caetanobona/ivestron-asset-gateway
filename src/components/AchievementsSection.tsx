@@ -57,17 +57,17 @@ const AchievementsSection = () => {
 
           <div className="flex flex-col gap-6">
             <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-center items-center">
-              <h3 className="text-6xl md:text-7xl font-bold text-ivestron-blue mb-2">700K<span className="text-green-400">+</span></h3>
+              <h3 className="text-6xl md:text-7xl font-bold text-ivestron-blue mb-2">700K<span className="text-ivestron-blue">+</span></h3>
               <p className="text-lg text-gray-300">Usuários investindo</p>
             </div>
             
-            <div className="bg-stone-900 rounded-xl overflow-hidden">
+            {/* <div className="bg-stone-900 rounded-xl overflow-hidden">
               <img 
                 src="/lovable-uploads/87860589-00a0-4a88-8904-d41bdd4501da.png" 
                 alt="Trading chart" 
                 className="w-full h-auto"
               />
-            </div>
+            </div> */}
             
             <TestimonialCard
               name="Angela Doncato"
@@ -85,13 +85,13 @@ const AchievementsSection = () => {
               rating={5}
             />
             
-            <div className="bg-stone-900 rounded-xl overflow-hidden">
+            {/* <div className="bg-stone-900 rounded-xl overflow-hidden">
               <img 
                 src="/lovable-uploads/c75f0900-17f3-4656-a926-87976798a930.png" 
                 alt="Trading chart" 
                 className="w-full h-auto"
               />
-            </div>
+            </div> */}
           </div>
         </div>
 

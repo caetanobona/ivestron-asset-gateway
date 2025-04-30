@@ -63,7 +63,7 @@ export default {
           ring: 'hsl(var(--sidebar-ring))'
         },
         ivestron: {
-          blue: '#0274be',
+          blue: '#03c04a',
           'blue-dark': '#0E8EBB',
           'text-gray': '#6B7280',
           bg: '#221F26',

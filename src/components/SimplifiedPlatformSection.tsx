@@ -10,10 +10,10 @@ const SimplifiedPlatformSection = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
           {/* Content */}
           <div className="w-full lg:w-1/2">
-            <h2 className="text-5xl md:text-6xl font-bold mb-4">
-              <span>Simplificamos</span><br />
-              <span className="text-ivestron-text-gray">tudo que poderia</span><br />
-              <span className="text-ivestron-text-gray">ser complexo</span>
+            <h2 className="text-5xl md:text-6xl mb-4">
+              <span className='font-bold'>Simplificamos</span><br />
+              <span className="text-gray-200">tudo que poderia</span><br />
+              <span className="text-gray-200">ser complexo</span>
             </h2>
             
             <p className="text-ivestron-text-gray text-lg mb-8 mt-6">

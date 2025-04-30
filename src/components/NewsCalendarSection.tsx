@@ -10,7 +10,7 @@ const NewsItem = ({ flag, title, value }: { flag: string, title: string, value: 
       <img src={flag} alt="Country flag" className="w-full h-full rounded-full object-cover" />
     </div>
     <div className="flex-grow">
-      <p className="font-medium">{title}</p>
+      <p className="text-gray-200 font-medium">{title}</p>
     </div>
     <div className="text-gray-400">
       {value}
@@ -24,7 +24,7 @@ const CalendarItem = ({ flag, title, time }: { flag: string, title: string, time
       <img src={flag} alt="Country flag" className="w-full h-full rounded-full object-cover" />
     </div>
     <div className="flex-grow">
-      <p className="font-medium">{title}</p>
+      <p className="text-gray-200 font-medium">{title}</p>
     </div>
     <div className="flex flex-col items-end">
       <span className="text-gray-400">{time}</span>
@@ -35,11 +35,11 @@ const CalendarItem = ({ flag, title, time }: { flag: string, title: string, time
 
 const NewsCalendarSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-stone-950">
+    <section className="pb-16 md:pb-20 bg-stone-950">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* News Feed Card */}
-          <Card className="bg-stone-900 border border-white/10 rounded-xl overflow-hidden">
+          <Card className="bg-gray-900 border-none rounded-xl overflow-hidden">
             <CardContent className="p-0">
               <div className="p-6">
                 <div className="flex items-center gap-2 text-gray-400 mb-2">
@@ -59,9 +59,8 @@ const NewsCalendarSection = () => {
                 </div>
                 
                 <div className="mb-4">
-                  <span className="inline-block bg-ivestron-blue/20 text-ivestron-blue rounded-full px-3 py-1 text-sm flex items-center gap-1">
+                  <span className=" bg-ivestron-blue/20 text-ivestron-blue rounded-full px-3 py-1 text-sm flex items-center gap-1">
                     Ativos Populares
-                    <button className="ml-1">✕</button>
                   </span>
                 </div>
                 
@@ -89,8 +88,8 @@ const NewsCalendarSection = () => {
               </div>
               
               <div className="px-6 py-8">
-                <h3 className="text-3xl font-bold mb-2">
-                  Tenha um Feed de <span className="text-ivestron-blue">notícias inteligente</span>
+                <h3 className="text-3xl font-bold mb-2 text-gray-200">
+                  Tenha um Feed de <span className="text-green-400">notícias inteligente</span>
                 </h3>
                 
                 <p className="text-gray-400 mt-4">
@@ -101,7 +100,7 @@ const NewsCalendarSection = () => {
           </Card>
           
           {/* Calendar Card */}
-          <Card className="bg-stone-900 border border-white/10 rounded-xl overflow-hidden">
+          <Card className="bg-gray-900 border-none rounded-xl overflow-hidden">
             <CardContent className="p-0">
               <div className="p-6">
                 <div className="flex items-center gap-2 text-gray-400 mb-4">
@@ -145,8 +144,8 @@ const NewsCalendarSection = () => {
               </div>
               
               <div className="px-6 py-8">
-                <h3 className="text-3xl font-bold mb-2">
-                  Acesso ao <span className="text-ivestron-blue">Calendário</span> econômico Integrado
+                <h3 className="text-3xl font-bold mb-2 text-gray-200">
+                  Acesso ao <span className="text-green-400">Calendário</span> econômico Integrado
                 </h3>
                 
                 <p className="text-gray-400 mt-4">
@@ -162,7 +161,7 @@ const NewsCalendarSection = () => {
             Comece a investir na IVESTRON, com segurança através de uma gama de ferramentas ideais para sua tomada de decisão.
           </p>
           
-          <Button className="bg-green-500 hover:bg-green-600 text-white px-10 py-6">
+          <Button className="bg-ivestron-blue hover:bg-green-600 text-white px-10 py-6">
             Comece Agora
           </Button>
         </div>
