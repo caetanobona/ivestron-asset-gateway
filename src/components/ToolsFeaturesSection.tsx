@@ -11,12 +11,12 @@ const ToolsFeaturesSection = () => {
         <div className="lg:flex lg:items-start lg:gap-12">
           {/* Left column */}
           <div className="lg:w-1/2 mb-10 lg:mb-0">
-            <div className="text-center lg:text-left mb-8">
-              <div className="mb-4 inline-block p-3 bg-white/5 rounded-full">
+            <div className="lg:text-left mb-8">
+              <div className="mb-4 inline-block p-3 bg-stone-800 rounded-full">
                 <Settings className="w-8 h-8 text-ivestron-blue" />
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-bold mb-2">
+              <h2 className="text-5xl font-bold">
                 Ferramentas
               </h2>
               <h2 className="text-4xl md:text-5xl mb-2">
@@ -26,7 +26,7 @@ const ToolsFeaturesSection = () => {
                 especialistas
               </h2>
               
-              <p className="text-ivestron-text-gray text-lg max-w-md">
+              <p className="text-ivestron-text-gray text-lg">
                 Acesse ferramentas de analise mais completas e avançadas para tomar as melhores decisões de investimento.
               </p>
             </div>

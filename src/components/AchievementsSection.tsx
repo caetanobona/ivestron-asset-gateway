@@ -45,14 +45,15 @@ const AchievementsSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="flex flex-col gap-6">
-            <TestimonialCard
-              name="Ricardo Nogueira"
-              age={24}
-              testimonial="Sou trader a 3 anos eu sofria com corretoras que tinham delay no gráfico, interface complexa e poucas ferramentas de análise, finalmente encontrei uma verdadeiramente boa!"
-              rating={5}
-            />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-stone-900 rounded-xl p-6">
+            <p className="mb-6">Sou trader a 3 anos eu sofria com corretoras que tinham delay no gráfico, interface complexa e poucas ferramentas de análise, finalmente encontrei uma verdadeiramente boa!</p>
+            <p className="font-bold mb-2">Ricardo Nogueira, 24</p>
+            <div className="flex">
+              {Array(5).fill(0).map((_, i) => (
+                <Star key={i} size={16} fill="#FFD700" color="#FFD700" />
+              ))}
+            </div>
           </div>
 
           <div className="flex flex-col gap-6">

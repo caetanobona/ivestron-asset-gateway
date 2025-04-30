@@ -13,7 +13,6 @@ import AchievementsSection from '@/components/AchievementsSection';
 import ToolsFeaturesSection from '@/components/ToolsFeaturesSection';
 import NewsCalendarSection from '@/components/NewsCalendarSection';
 import SimpleStepsSection from '@/components/SimpleStepsSection';
-import MockTradeEntry from '@/components/MockTradeEntry';
 
 const Index = () => {
   return (
