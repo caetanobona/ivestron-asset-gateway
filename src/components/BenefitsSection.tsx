@@ -15,7 +15,7 @@ const BenefitCard = ({ title, description, icon, className }: { title: string; d
 
 const BenefitsSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-stone-950">
+    <section className="py-10 md:py-24 bg-stone-950">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -64,13 +64,6 @@ const BenefitsSection = () => {
             description="Nossa equipe de especialistas está disponível para ajudar com qualquer dúvida ou problema."
             icon={<CheckCircle size={32} />}
           />
-        </div>
-        
-        <div className="text-center mt-12">
-          <a href="#" className="inline-flex items-center text-ivestron-blue hover:underline">
-            Ver todas as vantagens 
-            <ChevronRight size={16} className="ml-1" />
-          </a>
         </div>
       </div>
     </section>

@@ -106,12 +106,7 @@ const SimplifiedTradingSection = () => {
               </Button>
               
               <div className="flex items-center">
-                <div className="flex -space-x-2">
-                  <div className="w-10 h-10 rounded-full bg-yellow-500 border-2 border-stone-950"></div>
-                  <div className="w-10 h-10 rounded-full bg-pink-400 border-2 border-stone-950"></div>
-                  <div className="w-10 h-10 rounded-full bg-amber-700 border-2 border-stone-950"></div>
-                </div>
-                <div className="ml-2">
+                <div className="ml-2 flex flex-col w-full">
                   <div className="font-bold text-2xl">700K<span className="text-ivestron-blue">+</span></div>
                   <div className="text-ivestron-text-gray text-sm">Usuários Investindo</div>
                 </div>

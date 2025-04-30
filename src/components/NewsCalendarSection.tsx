@@ -157,11 +157,11 @@ const NewsCalendarSection = () => {
         </div>
         
         <div className="mt-8 text-center md:flex md:items-center md:justify-between">
-          <p className="text-gray-400 mb-6 md:mb-0 md:text-left">
+          <p className="text-gray-400 mb-6 md:mb-0 md:text-left pr-4">
             Comece a investir na IVESTRON, com segurança através de uma gama de ferramentas ideais para sua tomada de decisão.
           </p>
           
-          <Button className="bg-ivestron-blue hover:bg-green-600 text-white px-10 py-6">
+          <Button className="bg-ivestron-blue hover:bg-green-600 text-white px-10 py-6 w-full text-lg sm:w-[76%]">
             Comece Agora
           </Button>
         </div>

@@ -13,15 +13,15 @@ const FaqSection = () => {
   const faqItems = [
     {
       question: 'Qual o saque e depósito mínimo?',
-      answer: ''
+      answer: 'Dentro da plataforma você pode depositar no mínimo 10 dólares. O saque mínimo é de 2 dólares via e-wallet, e 25 dólares ou 150 reais nas demais formas de transferência.'
     },
     {
       question: 'Posso tirar dinheiro quando eu quiser?',
-      answer: ''
+      answer: 'Sim! Você pode abrir uma solicitação de saque sempre que quiser, sem burocracias.'
     },
     {
       question: 'Posso operar pelo celular?',
-      answer: ''
+      answer: 'Sim! Nossa plataforma é 100% responsiva para todos os celulares.'
     },
     {
       question: 'Como abrir um chamado de suporte?',
@@ -56,14 +56,10 @@ const FaqSection = () => {
             >
               <AccordionItem 
                 value={`item-${index}`} 
-                className={`overflow-hidden border-none rounded-md ${index === 3 ? 'bg-[#222229]' : 'bg-white'}`}
+                className='overflow-hidden border-none rounded-md'
               >
                 <AccordionTrigger 
-                  className={`px-6 py-4 flex justify-between hover:no-underline ${
-                    index === 3 
-                      ? 'text-ivestron-blue' 
-                      : 'text-gray-900'
-                  }`}
+                  className='px-6 py-4 flex justify-between hover:no-underline'
                 >
                   {item.question}
                 </AccordionTrigger>

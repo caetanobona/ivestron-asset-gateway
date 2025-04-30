@@ -46,7 +46,7 @@ const AchievementsSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-stone-900 rounded-xl p-6">
+          <div className="bg-stone-900 rounded-xl p-6 h-60">
             <p className="mb-6">Sou trader a 3 anos eu sofria com corretoras que tinham delay no gráfico, interface complexa e poucas ferramentas de análise, finalmente encontrei uma verdadeiramente boa!</p>
             <p className="font-bold mb-2">Ricardo Nogueira, 24</p>
             <div className="flex">
@@ -57,7 +57,7 @@ const AchievementsSection = () => {
           </div>
 
           <div className="flex flex-col gap-6">
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-center items-center">
+            <div className="bg-white/1 border border-white/10 rounded-xl p-6 flex flex-col justify-center items-center">
               <h3 className="text-6xl md:text-7xl font-bold text-ivestron-blue mb-2">700K<span className="text-ivestron-blue">+</span></h3>
               <p className="text-lg text-gray-300">Usuários investindo</p>
             </div>
