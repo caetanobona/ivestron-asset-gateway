@@ -7,11 +7,11 @@ const AssetHighlight = () => {
       <div className="flex flex-col max-w-5xl mx-auto px-6 text-center">
         <div className='lg:flex lg:flex-row justify-center items-center'>
           <h2 className="text- md:text-5xl font-bold justify-center items-center">
-            <span className="text-ivestron-blue text-9xl lg:text-[152px]">+200</span>
+            <span className="text-ivestron-green text-9xl lg:text-[152px]">+200</span>
             <br />
           </h2>
           <h2 className='text-4xl font-bold mb-4 lg:mb-0'>
-            <span className="text-ivestron-blue">Ativos para investir </span>
+            <span className="text-ivestron-green">Ativos para investir </span>
               
             <span>deforma totalmente descomplicada</span>
           </h2>

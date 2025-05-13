@@ -41,7 +41,7 @@ const FaqSection = () => {
         </p>
 
         <div className="flex justify-center mb-16">
-          <Button className="bg-ivestron-blue hover:bg-ivestron-blue-dark text-white text-lg rounded-md py-6 px-8 w-56">
+          <Button className="bg-ivestron-green hover:bg-ivestron-green-dark text-white text-lg rounded-md py-6 px-8 w-56">
             Comece Agora
           </Button>
         </div>

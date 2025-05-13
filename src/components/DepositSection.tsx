@@ -7,7 +7,7 @@ const DepositSection = () => {
       <div className="max-w-5xl mx-auto px-6 text-center">
         {/* Circular Icon */}
         <div className="w-14 h-14 mx-auto mb-6 bg-white rounded-full shadow-md flex items-center justify-center">
-          <div className="text-ivestron-blue">
+          <div className="text-ivestron-green">
             <DollarSign className="w-6 h-6" />
           </div>
         </div>
@@ -15,7 +15,7 @@ const DepositSection = () => {
         {/* Headline */}
         <h2 className="text-4xl md:text-5xl font-bold mb-8">
           <div>Deposito rápido,</div>
-          <div>Saque ainda mais<span className="text-ivestron-blue">!</span></div>
+          <div>Saque ainda mais<span className="text-ivestron-green">!</span></div>
         </h2>
         
         {/* Subheadline */}

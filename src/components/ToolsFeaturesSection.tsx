@@ -12,7 +12,7 @@ const ToolsFeaturesSection = () => {
           <div className="lg:w-1/2 mb-10 lg:mb-0">
             <div className="text-center lg:text-left mb-8">
               <div className="mb-4 inline-block p-3 bg-stone-800 rounded-full">
-                <Settings className="w-8 h-8 text-ivestron-blue" />
+                <Settings className="w-8 h-8 text-ivestron-green" />
               </div>
               
               <div className=''>

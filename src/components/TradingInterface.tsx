@@ -72,7 +72,7 @@ const TradingInterface = () => {
         <div className="bg-gray-900 rounded-2xl shadow-xl relative overflow-hidden h-[500px] md:h-[600px]">
           {/* Watermark Logo */}
           <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
-            <div className="w-40 h-40 rounded-full bg-ivestron-blue/20 flex items-center justify-center text-white text-8xl font-bold">
+            <div className="w-40 h-40 rounded-full bg-ivestron-green/20 flex items-center justify-center text-white text-8xl font-bold">
               I
             </div>
           </div>
@@ -80,11 +80,11 @@ const TradingInterface = () => {
           {/* Sidebar */}
           <div className="absolute left-0 top-0 bottom-0 w-20 md:w-24 bg-black/90 p-3 flex flex-col items-center">
             <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-8 mt-4">
-              <div className="w-6 h-6 rounded-full bg-ivestron-blue"></div>
+              <div className="w-6 h-6 rounded-full bg-ivestron-green"></div>
             </div>
             
             {['How to trade?', 'Interface guide', 'All Videos', 'Basics', 'Technical Analysis', 'Fundamental Analysis'].map((item, index) => (
-              <div key={index} className="text-white/60 text-[8px] md:text-[9px] text-center mb-5 cursor-pointer hover:text-ivestron-blue">
+              <div key={index} className="text-white/60 text-[8px] md:text-[9px] text-center mb-5 cursor-pointer hover:text-ivestron-green">
                 {item}
               </div>
             ))}

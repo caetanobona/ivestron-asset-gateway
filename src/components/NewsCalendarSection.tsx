@@ -43,7 +43,7 @@ const NewsCalendarSection = () => {
             <CardContent className="p-0">
               <div className="p-6">
                 <div className="flex items-center gap-2 text-gray-400 mb-2">
-                  <FileText size={18} className="text-ivestron-blue" />
+                  <FileText size={18} className="text-ivestron-green" />
                   <span>Notícias</span>
                   
                   <div className="ml-auto flex gap-2">
@@ -59,7 +59,7 @@ const NewsCalendarSection = () => {
                 </div>
                 
                 <div className="mb-4">
-                  <span className=" bg-ivestron-blue/20 text-ivestron-blue rounded-full px-3 py-1 text-sm flex items-center gap-1">
+                  <span className=" bg-ivestron-green/20 text-ivestron-green rounded-full px-3 py-1 text-sm flex items-center gap-1">
                     Ativos Populares
                   </span>
                 </div>
@@ -104,7 +104,7 @@ const NewsCalendarSection = () => {
             <CardContent className="p-0">
               <div className="p-6">
                 <div className="flex items-center gap-2 text-gray-400 mb-4">
-                  <Calendar size={18} className="text-ivestron-blue" />
+                  <Calendar size={18} className="text-ivestron-green" />
                   <span>Calendário econômico</span>
                   
                   <div className="ml-auto flex gap-2">
@@ -161,7 +161,7 @@ const NewsCalendarSection = () => {
             Comece a investir na IVESTRON, com segurança através de uma gama de ferramentas ideais para sua tomada de decisão.
           </p>
           
-          <Button className="bg-ivestron-blue hover:bg-green-600 text-white px-10 py-6 w-full text-lg sm:w-[76%]">
+          <Button className="bg-ivestron-green hover:bg-green-600 text-white px-10 py-6 w-full text-lg sm:w-[76%]">
             Comece Agora
           </Button>
         </div>

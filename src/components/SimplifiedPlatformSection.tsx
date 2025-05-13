@@ -22,7 +22,7 @@ const SimplifiedPlatformSection = () => {
               não se perder e nem ter medo de começar!
             </p>
             
-            <Button className="bg-ivestron-blue hover:bg-ivestron-blue-dark text-white px-8 py-6 rounded-md text-md w-full lg:w-auto">
+            <Button className="bg-ivestron-green hover:bg-ivestron-green-dark text-white px-8 py-6 rounded-md text-md w-full lg:w-auto">
               Comece Agora
             </Button>
           </div>
@@ -39,7 +39,7 @@ const SimplifiedPlatformSection = () => {
                 <div className="space-y-4">
                   <div className="bg-stone-800 rounded-xl p-4 flex items-center">
                     <div className="w-10 h-10 bg-stone-700 rounded-full flex items-center justify-center mr-3">
-                      <MessageCircle size={20} className="text-ivestron-blue" />
+                      <MessageCircle size={20} className="text-ivestron-green" />
                     </div>
                     <div>
                       <div className="font-medium">Como negociar?</div>
@@ -49,7 +49,7 @@ const SimplifiedPlatformSection = () => {
                   
                   <div className="bg-stone-800 rounded-xl p-4 flex items-center">
                     <div className="w-10 h-10 bg-stone-700 rounded-full flex items-center justify-center mr-3">
-                      <MessageCircle size={20} className="text-ivestron-blue" />
+                      <MessageCircle size={20} className="text-ivestron-green" />
                     </div>
                     <div>
                       <div className="font-medium">Guia de Interface</div>
@@ -64,7 +64,7 @@ const SimplifiedPlatformSection = () => {
                     
                     <div className="bg-stone-800 rounded-xl p-4 flex items-center">
                       <div className="w-10 h-10 bg-stone-700 rounded-full flex items-center justify-center mr-3">
-                        <PlayCircle size={20} className="text-ivestron-blue" />
+                        <PlayCircle size={20} className="text-ivestron-green" />
                       </div>
                       <div>
                         <div className="font-medium">Todos os Vídeos</div>
@@ -74,7 +74,7 @@ const SimplifiedPlatformSection = () => {
                     
                     <div className="bg-stone-800 rounded-xl p-4 flex items-center mt-4">
                       <div className="w-10 h-10 bg-stone-700 rounded-full flex items-center justify-center mr-3">
-                        <Book size={20} className="text-ivestron-blue" />
+                        <Book size={20} className="text-ivestron-green" />
                       </div>
                       <div>
                         <div className="font-medium">Noções Básicas</div>
@@ -84,7 +84,7 @@ const SimplifiedPlatformSection = () => {
                     
                     <div className="bg-stone-800 rounded-xl p-4 flex items-center mt-4">
                       <div className="w-10 h-10 bg-stone-700 rounded-full flex items-center justify-center mr-3">
-                        <BarChart3 size={20} className="text-ivestron-blue" />
+                        <BarChart3 size={20} className="text-ivestron-green" />
                       </div>
                       <div>
                         <div className="font-medium">Análise Técnica</div>
@@ -94,7 +94,7 @@ const SimplifiedPlatformSection = () => {
                     
                     <div className="bg-stone-800 rounded-xl p-4 flex items-center mt-4">
                       <div className="w-10 h-10 bg-stone-700 rounded-full flex items-center justify-center mr-3">
-                        <PieChart size={20} className="text-ivestron-blue" />
+                        <PieChart size={20} className="text-ivestron-green" />
                       </div>
                       <div>
                         <div className="font-medium">Análise Fundamental</div>
@@ -107,7 +107,7 @@ const SimplifiedPlatformSection = () => {
             </div>
             
             {/* Background Accent */}
-            <div className="absolute top-0 right-0 w-3/4 h-3/4 bg-ivestron-blue/20 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute top-0 right-0 w-3/4 h-3/4 bg-ivestron-green/20 rounded-full blur-3xl -z-10"></div>
           </div>
         </div>
       </div>

@@ -28,28 +28,28 @@ const Navbar = () => {
             <a 
               href="#hero" 
               onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }} 
-              className="font-medium text-white/80 hover:text-ivestron-blue transition-colors"
+              className="font-medium text-white/80 hover:text-ivestron-green transition-colors"
             >
               Início
             </a>
             <a 
               href="#assets" 
               onClick={(e) => { e.preventDefault(); scrollToSection('assets'); }} 
-              className="font-medium text-white/80 hover:text-ivestron-blue transition-colors"
+              className="font-medium text-white/80 hover:text-ivestron-green transition-colors"
             >
               Ativos
             </a>
             <a 
               href="#agility" 
               onClick={(e) => { e.preventDefault(); scrollToSection('agility'); }} 
-              className="font-medium text-white/80 hover:text-ivestron-blue transition-colors"
+              className="font-medium text-white/80 hover:text-ivestron-green transition-colors"
             >
               Agilidade
             </a>
             <a 
               href="#tools" 
               onClick={(e) => { e.preventDefault(); scrollToSection('tools'); }} 
-              className="font-medium text-white/80 hover:text-ivestron-blue transition-colors"
+              className="font-medium text-white/80 hover:text-ivestron-green transition-colors"
             >
               Ferramentas
             </a>
@@ -60,8 +60,8 @@ const Navbar = () => {
         <div className="flex items-center space-x-6">
           
           {/* Authentication buttons */}
-          <a href="#" className="hidden md:block text-white/80 hover:text-ivestron-blue transition-colors">Acessar</a>
-          <Button className="bg-ivestron-blue hover:bg-ivestron-blue-dark text-white rounded-md px-5 py-2">
+          <a href="#" className="hidden md:block text-white/80 hover:text-ivestron-green transition-colors">Acessar</a>
+          <Button className="bg-ivestron-green hover:bg-ivestron-green-dark text-white rounded-md px-5 py-2">
             Criar conta
           </Button>
         </div>

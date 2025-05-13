@@ -41,7 +41,7 @@ const AchievementsSection = () => {
             Conheça um pouco das
           </h2>
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            nossas <span className="text-ivestron-blue">conquistas</span>
+            nossas <span className="text-ivestron-green">conquistas</span>
           </h2>
         </div>
 
@@ -58,7 +58,7 @@ const AchievementsSection = () => {
 
           <div className="flex flex-col gap-6">
             <div className="bg-white/1 border border-white/10 rounded-xl p-6 flex flex-col justify-center items-center">
-              <h3 className="text-6xl md:text-7xl font-bold text-ivestron-blue mb-2">700K<span className="text-ivestron-blue">+</span></h3>
+              <h3 className="text-6xl md:text-7xl font-bold text-ivestron-green mb-2">700K<span className="text-ivestron-green">+</span></h3>
               <p className="text-lg text-gray-300">Usuários investindo</p>
             </div>
             

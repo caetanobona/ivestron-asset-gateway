@@ -16,7 +16,7 @@ const Step = ({ number, title, subtitle, description }: StepProps) => {
       </div>
       
       <div>
-        <p className="text-ivestron-blue text-lg font-medium mb-1">{title}</p>
+        <p className="text-ivestron-green text-lg font-medium mb-1">{title}</p>
         <h3 className="text-2xl md:text-3xl font-bold mb-4">{subtitle}</h3>
         <p className="text-ivestron-text-gray">{description}</p>
       </div>
@@ -33,7 +33,7 @@ const SimpleStepsSection = () => {
             Comece em apenas
           </h2>
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            <span className="text-ivestron-blue">3 Passos Simples</span>
+            <span className="text-ivestron-green">3 Passos Simples</span>
           </h2>
           
           <p className="text-ivestron-text-gray text-lg max-w-3xl mx-auto">

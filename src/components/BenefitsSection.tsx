@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 const BenefitCard = ({ title, description, icon, className }: { title: string; description: string; icon: React.ReactNode, className?:string }) => (
   <div className={cn("bg-stone-900 rounded-xl p-6 border border-stone-800", className)}>
-    <div className="text-ivestron-blue mb-4">
+    <div className="text-ivestron-green mb-4">
       {icon}
     </div>
     <h3 className="text-xl font-bold mb-2">{title}</h3>
@@ -19,7 +19,7 @@ const BenefitsSection = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Vantagens da <span className="text-ivestron-blue">IVESTRON</span>
+            Vantagens da <span className="text-ivestron-green">IVESTRON</span>
           </h2>
           <p className="text-ivestron-text-gray text-lg max-w-3xl mx-auto">
             Nossa plataforma foi desenhada para oferecer a melhor experiência possível
