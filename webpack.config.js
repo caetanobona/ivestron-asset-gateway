@@ -1,7 +1,7 @@
 
 import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import InlineChunkHtmlPlugin from 'react-dev-utils/InlineChunkHtmlPlugin';
+import HtmlWebpackInlineSourcePlugin from 'html-webpack-inline-source-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { DefinePlugin } from 'webpack';
 import { fileURLToPath } from 'url';
@@ -48,9 +48,9 @@ export default {
     new HtmlWebpackPlugin({
       template: './index.html',
       inject: true,
-      inlineSource: '.(js|css)$',
+      inlineSource: '.(js|css)$', // This tells the inline plugin which files to inline
     }),
-    new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/\.(js|css)$/]),
+    new HtmlWebpackInlineSourcePlugin(HtmlWebpackPlugin),
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
