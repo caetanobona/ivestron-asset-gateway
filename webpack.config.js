@@ -61,4 +61,9 @@ module.exports = {
     maxEntrypointSize: 5120000,
     maxAssetSize: 5120000,
   },
+  stats: {
+    children: true, // Add this to show child compilation details
+    errorDetails: true, // Add this to show detailed error information
+  },
+  ignoreWarnings: [/Failed to parse source map/], // Optional: ignore source map warnings
 };
