@@ -1,11 +1,15 @@
 
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { DefinePlugin } = require('webpack');
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import InlineChunkHtmlPlugin from 'react-dev-utils/InlineChunkHtmlPlugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { DefinePlugin } from 'webpack';
+import { fileURLToPath } from 'url';
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default {
   entry: './src/main.tsx',
   mode: 'production',
   output: {
@@ -62,8 +66,8 @@ module.exports = {
     maxAssetSize: 5120000,
   },
   stats: {
-    children: true, // Add this to show child compilation details
-    errorDetails: true, // Add this to show detailed error information
+    children: true,
+    errorDetails: true,
   },
-  ignoreWarnings: [/Failed to parse source map/], // Optional: ignore source map warnings
+  ignoreWarnings: [/Failed to parse source map/],
 };
