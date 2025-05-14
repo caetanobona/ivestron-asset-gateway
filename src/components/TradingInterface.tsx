@@ -72,26 +72,31 @@ const IPhoneMockup = () => {
     <div className="w-full max-w-[320px] mx-auto relative">
       {/* iPhone frame */}
       <div className="relative w-full aspect-[9/19] bg-gray-200 rounded-[40px] p-3 shadow-xl overflow-hidden">
-        {/* Notch */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120px] h-[30px] bg-black rounded-b-[14px] z-10">
+        {/* Notch with white border */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[120px] h-[30px] bg-white rounded-b-[14px] z-10 overflow-hidden">
+          {/* Inner black part of notch */}
+          <div className="absolute inset-[1.5px] bg-black rounded-b-[12px]">
+            {/* Status bar icons inside notch */}
+            <div className="flex justify-between items-center px-4 h-full text-white text-xs">
+              <div className="flex items-center gap-1">
+                <span className="text-xs">08:58</span>
+                <span>☾</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs">•</span>
+                <span className="i-lucide-wifi" />
+                <div className="w-5 h-2.5 rounded-sm border border-white/60 relative">
+                  <div className="absolute right-0.5 top-0.5 bottom-0.5 w-3 bg-red-500 rounded-sm"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         
         {/* Screen */}
         <div className="w-full h-full bg-black rounded-[32px] overflow-hidden relative">
-          {/* Status bar */}
-          <div className="flex justify-between items-center px-6 h-10 text-white text-xs font-medium">
-            <div>08:58 ☾</div>
-            <div className="flex items-center gap-1">
-              <span>•</span>
-              <span className="i-lucide-wifi" />
-              <span className="w-6 h-3 rounded-sm border border-white/60 relative">
-                <span className="absolute right-0.5 top-0.5 bottom-0.5 w-4 bg-red-500 rounded-sm"></span>
-              </span>
-            </div>
-          </div>
-          
           {/* Account info */}
-          <div className="px-5 py-3">
+          <div className="px-5 pt-8 pb-3">
             <div className="flex justify-between items-center">
               <div>
                 <p className="text-gray-400 text-sm">Demo account ▾</p>
