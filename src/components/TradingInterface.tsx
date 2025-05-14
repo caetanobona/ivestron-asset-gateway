@@ -1,5 +1,5 @@
 
-import { Bitcoin, Icon, IconNode } from 'lucide-react';
+import { Bitcoin } from 'lucide-react';
 import { FcGoogle } from "react-icons/fc"
 import { FaMeta } from 'react-icons/fa6';
 import React from 'react';
@@ -65,91 +65,100 @@ const AssetCard: React.FC<AssetCardProps> = ({
 };
 
 const TradingInterface = () => {
-  return (
-    <section className="py-12 lg:py-6 px-6 relative">
-      <div className="max-w-6xl mx-auto relative">
-        {/* Main Trading Interface */}
-        <div className="bg-gray-900 rounded-2xl shadow-xl relative overflow-hidden h-[500px] md:h-[600px]">
-          {/* Watermark Logo */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
-            <div className="w-40 h-40 rounded-full bg-ivestron-green/20 flex items-center justify-center text-white text-8xl font-bold">
-              I
-            </div>
-          </div>
-          
-          {/* Sidebar */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 md:w-24 bg-black/90 p-3 flex flex-col items-center">
-            <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-8 mt-4">
-              <div className="w-6 h-6 rounded-full bg-ivestron-green"></div>
+
+  if(window.innerWidth < 1024) {
+    return (
+      <div>
+
+      </div>
+    )
+  } else {
+    return (
+      <section className="py-12 lg:py-6 px-6 relative">
+        <div className="max-w-6xl mx-auto relative">
+          {/* Main Trading Interface */}
+          <div className="bg-gray-900 rounded-2xl shadow-xl relative overflow-hidden h-[500px] md:h-[600px]">
+            {/* Watermark Logo */}
+            <div className="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
+              <div className="w-40 h-40 rounded-full bg-ivestron-green/20 flex items-center justify-center text-white text-8xl font-bold">
+                I
+              </div>
             </div>
             
-            {['How to trade?', 'Interface guide', 'All Videos', 'Basics', 'Technical Analysis', 'Fundamental Analysis'].map((item, index) => (
-              <div key={index} className="text-white/60 text-[8px] md:text-[9px] text-center mb-5 cursor-pointer hover:text-ivestron-green">
-                {item}
+            {/* Sidebar */}
+            <div className="absolute left-0 top-0 bottom-0 w-20 md:w-24 bg-black/90 p-3 flex flex-col items-center">
+              <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-8 mt-4">
+                <div className="w-6 h-6 rounded-full bg-ivestron-green"></div>
               </div>
-            ))}
-          </div>
-          
-          {/* Chart Area */}
-          <div className="ml-20 md:ml-24 h-full p-6">
-            {/* Mock Chart - Using a simple representation */}
-            <div className="w-full h-full flex items-center justify-center">
-              <div className="w-full h-3/4 flex items-end space-x-1">
-                {Array.from({ length: 50 }).map((_, i) => {
-                  const height = 20 + Math.random() * 80;
-                  const isPositive = Math.random() > 0.4;
-                  
-                  return (
-                    <div 
-                      key={i} 
-                      className="h-full flex items-end"
-                      style={{ width: `${100 / 60}%` }}
-                    >
+              
+              {['How to trade?', 'Interface guide', 'All Videos', 'Basics', 'Technical Analysis', 'Fundamental Analysis'].map((item, index) => (
+                <div key={index} className="text-white/60 text-[8px] md:text-[9px] text-center mb-5 cursor-pointer hover:text-ivestron-green">
+                  {item}
+                </div>
+              ))}
+            </div>
+            
+            {/* Chart Area */}
+            <div className="ml-20 md:ml-24 h-full p-6">
+              {/* Mock Chart - Using a simple representation */}
+              <div className="w-full h-full flex items-center justify-center">
+                <div className="w-full h-3/4 flex items-end space-x-1">
+                  {Array.from({ length: 50 }).map((_, i) => {
+                    const height = 20 + Math.random() * 80;
+                    const isPositive = Math.random() > 0.4;
+                    
+                    return (
                       <div 
-                        className={`w-full ${isPositive ? 'bg-green-500' : 'bg-red-500'}`}
-                        style={{ height: `${height}%` }}
-                      ></div>
-                    </div>
-                  );
-                })}
+                        key={i} 
+                        className="h-full flex items-end"
+                        style={{ width: `${100 / 60}%` }}
+                      >
+                        <div 
+                          className={`w-full ${isPositive ? 'bg-green-500' : 'bg-red-500'}`}
+                          style={{ height: `${height}%` }}
+                        ></div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
+            
+            {/* Asset Cards */}
+            <AssetCard 
+              iconKey="Meta"
+              name="Meta"
+              profit="190%"
+              price="577.62"
+              change="+0.15%"
+              isPositive={true}
+              position="top-left"
+            />
+            
+            <AssetCard 
+              iconKey="Google"
+              name="Google"
+              profit="190%"
+              price="120.85"
+              change="+0.22%"
+              isPositive={true}
+              position="bottom-left"
+            />
+            
+            <AssetCard 
+              iconKey="Bitcoin"
+              name="Bitcoin"
+              profit="192%"
+              price="62788.64"
+              change="-0.17%"
+              isPositive={false}
+              position="right"
+            />
           </div>
-          
-          {/* Asset Cards */}
-          <AssetCard 
-            iconKey="Meta"
-            name="Meta"
-            profit="190%"
-            price="577.62"
-            change="+0.15%"
-            isPositive={true}
-            position="top-left"
-          />
-          
-          <AssetCard 
-            iconKey="Google"
-            name="Google"
-            profit="190%"
-            price="120.85"
-            change="+0.22%"
-            isPositive={true}
-            position="bottom-left"
-          />
-          
-          <AssetCard 
-            iconKey="Bitcoin"
-            name="Bitcoin"
-            profit="192%"
-            price="62788.64"
-            change="-0.17%"
-            isPositive={false}
-            position="right"
-          />
         </div>
-      </div>
-    </section>
-  );
+      </section>
+    );
+  }
 };
 
 export default TradingInterface;

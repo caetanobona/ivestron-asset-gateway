@@ -6,14 +6,16 @@ export default function AutoFinalizeCard() {
   // Approximate line chart path; adjust points as needed
   const chartPath =
     "M0,140 L50,110 L100,70 L150,120 L200,100 L250,150 L300,60 L350,90 L400,80 L450,100 L500,110";
+  const svgWidth = 500;
+  const svgHeight = 150;
 
   if(window.innerWidth > 1024) {
     return (
       <div className="max-w-6xl lg:h-72 mx-auto bg-gray-900 rounded-2xl overflow-hidden text-white">
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col lg:flex-row">
           {/* Left: Chart + Overlays */}
-          <div className="relative w-full md:w-1/2">
-            <div className="w-full h-40 lg:h-full md:h-56">
+          <div className="relative w-full md:w-1/2 h-full">
+            {/* <div className="w-full h-40 lg:h-full md:h-56">
               <svg viewBox="0 0 500 260" className="w-full h-full">
                 <defs>
                   <linearGradient id="chartBg2" x1="0" y1="0" x2="0" y2="1">
@@ -21,9 +23,9 @@ export default function AutoFinalizeCard() {
                     <stop offset="100%" stopColor="#1f2937" />
                   </linearGradient>
                 </defs>
-                {/* Background */}
+                
                 <rect width="500" height="260" fill="url(#chartBg2)" />
-                {/* Dashed guide line at y=60 */}
+
                 <line
                   x1="0"
                   y1="60"
@@ -33,7 +35,7 @@ export default function AutoFinalizeCard() {
                   strokeDasharray="4 4"
                   strokeWidth="1"
                 />
-                {/* Chart line */}
+
                 <path
                   d={chartPath}
                   fill="none"
@@ -41,10 +43,63 @@ export default function AutoFinalizeCard() {
                   strokeWidth="2"
                   strokeLinecap="round"
                 />
-                {/* Highlighted data point */}
+
                 <circle cx="300" cy="60" r="4" fill="#10B981" />
               </svg>
+            </div> */}
+
+            <div className="overflow-auto border-1 border-red-500">
+              <svg
+                viewBox={`0 0 500 260`}
+                preserveAspectRatio="none"
+                className="w-full h-full"
+              >
+                <defs>
+                  <linearGradient id="chartBg" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#111827" />
+                    <stop offset="100%" stopColor="#1f2937" />
+                  </linearGradient>
+                  <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#00F27A" stopOpacity="0.3" />
+                    <stop offset="100%" stopColor="#1f2937" stopOpacity="0" />
+                  </linearGradient>
+                </defs>
+
+                {/* background */}
+                <rect width="100%" height="140%" fill="url(#chartBg)" />
+
+                {/* dashed guide line */}
+                <line
+                  x1="0"
+                  y1="50"
+                  x2={svgWidth}
+                  y2="50"
+                  stroke="#4B5563"
+                  strokeDasharray="4 4"
+                  strokeWidth="1"
+                />
+
+                {/* filled area under the line */}
+                <path
+                  d={`${chartPath} L${svgWidth},${svgHeight} L0,${svgHeight} Z`}
+                  fill="url(#areaGradient)"
+                />
+
+                {/* the line */}
+                <path
+                  d={chartPath}
+                  fill="none"
+                  stroke="#00F27A"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+
+                {/* highlight circle */}
+                <circle cx="300" cy="50" r="4" fill="#00F27A" />
+              </svg>
             </div>
+
+
 
             {/* Floating tooltip */}
             <div className="absolute top-4 left-4 bg-black bg-opacity-50 backdrop-blur-sm  rounded-xl px-3 py-2 md:px-4 md:py-3">
