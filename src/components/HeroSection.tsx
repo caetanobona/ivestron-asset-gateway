@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
+import { handleRegister } from '@/hooks/use-register';
 
 const HeroSection = () => {
   return (
@@ -17,7 +18,10 @@ const HeroSection = () => {
         </p>
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
-          <Button className="bg-ivestron-green hover:bg-ivestron-green-dark text-white text-lg rounded-md py-6 px-8 w-56 shadow-md">
+          <Button 
+            className="bg-ivestron-green hover:bg-ivestron-green-dark text-white text-lg rounded-md py-6 px-8 w-56 shadow-md"
+            onClick={handleRegister()}
+          >
             Comece Agora
           </Button>
           

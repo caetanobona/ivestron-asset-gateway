@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import { handleRegister } from '@/hooks/use-register';
 
 const FaqSection = () => {
   const faqItems = [
@@ -41,7 +42,10 @@ const FaqSection = () => {
         </p>
 
         <div className="flex justify-center mb-16">
-          <Button className="bg-ivestron-green hover:bg-ivestron-green-dark text-white text-lg rounded-md py-6 px-8 w-56">
+          <Button 
+            className="bg-ivestron-green hover:bg-ivestron-green-dark text-white text-lg rounded-md py-6 px-8 w-56"
+            onClick={handleRegister()}  
+          >
             Comece Agora
           </Button>
         </div>

@@ -3,6 +3,7 @@ import React from 'react';
 import { FileText, Calendar, DollarSign } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { handleRegister } from '@/hooks/use-register';
 
 const NewsItem = ({ flag, title, value }: { flag: string, title: string, value: string }) => (
   <div className="flex items-center gap-3 py-4 border-b border-white/5">
@@ -161,7 +162,10 @@ const NewsCalendarSection = () => {
             Comece a investir na IVESTRON, com segurança através de uma gama de ferramentas ideais para sua tomada de decisão.
           </p>
           
-          <Button className="bg-ivestron-green hover:bg-green-600 text-white px-10 py-6 w-full text-lg sm:w-[76%]">
+          <Button 
+            className="bg-ivestron-green hover:bg-green-600 text-white px-10 py-6 w-full text-lg sm:w-[76%]"
+            onClick={handleRegister()}  
+          >
             Comece Agora
           </Button>
         </div>

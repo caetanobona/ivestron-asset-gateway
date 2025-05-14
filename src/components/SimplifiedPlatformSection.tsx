@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, PlayCircle, Book, BarChart3, PieChart } from 'lucide-react';
+import { handleRegister } from '@/hooks/use-register';
 
 const SimplifiedPlatformSection = () => {
   return (
@@ -22,7 +23,10 @@ const SimplifiedPlatformSection = () => {
               não se perder e nem ter medo de começar!
             </p>
             
-            <Button className="bg-ivestron-green hover:bg-ivestron-green-dark text-white px-8 py-6 rounded-md text-md w-full lg:w-auto">
+            <Button 
+              className="bg-ivestron-green hover:bg-ivestron-green-dark text-white px-8 py-6 rounded-md text-md w-full lg:w-auto"
+              onClick={handleRegister()}  
+            >
               Comece Agora
             </Button>
           </div>

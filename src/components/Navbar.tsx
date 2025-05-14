@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
+import { handleRegister } from '@/hooks/use-register';
 
 const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
@@ -17,7 +18,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center mr-4 lg:mr-12">
             <img 
-              src="/lovable-uploads/795bb033-d644-4c19-be37-6a0ba0fa84d9.png" 
+              src="./src/assets/Logo.png" 
               alt="IVESTRON"
               className="h-12 w-full"
             />
@@ -61,7 +62,10 @@ const Navbar = () => {
           
           {/* Authentication buttons */}
           <a href="#" className="hidden md:block text-white/80 hover:text-ivestron-green transition-colors">Acessar</a>
-          <Button className="bg-ivestron-green hover:bg-ivestron-green-dark text-white rounded-md px-5 py-2">
+          <Button 
+            className="bg-ivestron-green hover:bg-ivestron-green-dark text-white rounded-md px-5 py-2"
+            onClick={handleRegister()}  
+          >
             Criar conta
           </Button>
         </div>

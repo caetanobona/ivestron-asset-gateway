@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Button } from './ui/button';
+import { handleRegister } from '@/hooks/use-register';
 
 type StepProps = {
   number: number;
