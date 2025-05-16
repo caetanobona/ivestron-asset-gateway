@@ -158,16 +158,19 @@ const NewsCalendarSection = () => {
         </div>
         
         <div className="mt-8 text-center md:flex md:items-center md:justify-between">
-          <p className="text-gray-400 mb-6 md:mb-0 md:text-left pr-4">
+          <p className="text-gray-400 mb-6 md:mb-0 md:text-left pr-4 md:max-w-[50%]">
             Comece a investir na IVESTRON, com segurança através de uma gama de ferramentas ideais para sua tomada de decisão.
           </p>
           
-          <Button 
-            className="bg-ivestron-green hover:bg-green-600 text-white px-10 py-6 w-full text-lg sm:w-[76%]"
-            onClick={handleRegister()}  
-          >
-            Comece Agora
-          </Button>
+          <div className='w-full md:w-auto bg-ivestron-green hover:bg-green-600 text-center rounded-xl px-10 py-4'>
+            <a 
+              className="text-white text-lg"
+              href='https://ivestron.com/register'
+            >
+              Comece Agora
+            </a>
+          </div>
+
         </div>
       </div>
     </section>

@@ -18,7 +18,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center mr-4 lg:mr-12">
             <img 
-              src="./src/assets/Logo.png" 
+              src="https://lh3.googleusercontent.com/pw/AP1GczNsn75s_7EapDC8_C10geQNRdq09CP7DNRdcUlLwrBI_IssP16ZPkv_0-r-joCtU_liyDasKmgYeeXzknld40PQUvbEFWPEuifH2a9BLc7eiv5BwObaVcUjmL4r8IPT1K6ts4lWFNth1MP6y--ADCk=w1024-h367-s-no?authuser=2" 
               alt="IVESTRON"
               className="h-12 w-full"
             />

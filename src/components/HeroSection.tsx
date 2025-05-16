@@ -18,12 +18,12 @@ const HeroSection = () => {
         </p>
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
-          <Button 
-            className="bg-ivestron-green hover:bg-ivestron-green-dark text-white text-lg rounded-md py-6 px-8 w-56 shadow-md"
-            onClick={handleRegister()}
+          <a 
+            className="bg-ivestron-green hover:bg-ivestron-green-dark text-white text-center text-lg rounded-md py-3 w-56 shadow-md"
+            href='https://ivestron.com/register'
           >
             Comece Agora
-          </Button>
+          </a>
           
           <a href="#assets" className="flex items-center text-gray-700 hover:text-ivestron-green transition-colors">
             <span className="mr-2">Saiba mais</span>

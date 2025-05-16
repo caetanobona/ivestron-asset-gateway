@@ -42,12 +42,12 @@ const FaqSection = () => {
         </p>
 
         <div className="flex justify-center mb-16">
-          <Button 
-            className="bg-ivestron-green hover:bg-ivestron-green-dark text-white text-lg rounded-md py-6 px-8 w-56"
-            onClick={handleRegister()}  
+          <a 
+            className="bg-ivestron-green hover:bg-ivestron-green-dark text-center text-white text-lg rounded-md py-3 w-56"
+            href='https://ivestron.com/register'
           >
             Comece Agora
-          </Button>
+          </a>
         </div>
 
         <div className="space-y-4">

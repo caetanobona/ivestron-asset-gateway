@@ -11,8 +11,8 @@ const SimplifiedTradingSection = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center space-x-4 gap-10">
           {/* Trading Platform Mockup */}
           <div className='space-y-6 bg-ivestron-green p-10 rounded-[36px] relative w-80 h-[426px] lg:w-96 lg:h-[488px]'>
-            <MockTradeEntry className='absolute right-6 lg:right-8 blur-[2px]' title='Entrada de Compra' titleColor='text-green-500'/>
-            <MockTradeEntry className='absolute top-40 left-4 lg:top-44 lg:left-6' title='Entrada de Venda' titleColor='text-red-500'/>
+            <MockTradeEntry className='absolute right-6 lg:right-8 blur-[2px]' title='Entrada de Venda' titleColor='text-red-500'/>
+            <MockTradeEntry className='absolute top-40 left-4 lg:top-44 lg:left-6' title='Entrada de Compra' titleColor='text-green-500'/>
           </div>
           
           {/* Content */}
@@ -31,12 +31,12 @@ const SimplifiedTradingSection = () => {
             </p>
             
             <div className="flex-col flex items-center gap-6 lg:flex-row">
-              <Button 
-                className="bg-ivestron-green w-full text-md hover:bg-ivestron-green-dark text-white px-8 py-6 rounded-md lg:w-auto"
-                onClick={handleRegister()}  
+              <a 
+                className="bg-ivestron-green w-full text-md hover:bg-ivestron-green-dark py-3 px-4 text-center text-white rounded-md lg:w-auto"
+                href='https://ivestron.com/register'
               >
                 Comece Agora
-              </Button>
+              </a>
               
               <div className="flex items-center">
                 <div className="flex flex-col w-full">

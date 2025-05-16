@@ -23,12 +23,15 @@ const SimplifiedPlatformSection = () => {
               não se perder e nem ter medo de começar!
             </p>
             
-            <Button 
-              className="bg-ivestron-green hover:bg-ivestron-green-dark text-white px-8 py-6 rounded-md text-md w-full lg:w-auto"
-              onClick={handleRegister()}  
-            >
-              Comece Agora
-            </Button>
+            <div className='w-full md:w-auto bg-ivestron-green px-8 py-3 rounded-md text-center'>
+              <a 
+                className="bg-ivestron-green hover:bg-ivestron-green-dark text-white text-center text-md"
+                href='https://ivestron.com/register' 
+              >
+                Comece Agora
+              </a>
+            </div>
+
           </div>
           
           {/* Tutorials Section */}
