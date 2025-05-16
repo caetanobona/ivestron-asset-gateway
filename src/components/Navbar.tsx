@@ -16,11 +16,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
           {/* Logo */}
-          <div className="flex items-center mr-4 lg:mr-12">
+          <div className="mr-4 lg:mr-12">
             <img 
               src="https://lh3.googleusercontent.com/pw/AP1GczPyOaqHmAEp168yQSP2SwWA0ldiCp-OxR9cc3P4hBok2hM3r2qdjWbbCKpMjrnJ6DMnIAGu47oPn-l_PSHyZI-MROsBVCnO9Hki2JcvkwsHHruyNoTWJ0tLi5OBqsenMsoc6sl8ayi0hdz_csde4k4=w500-h200-s-no?authuser=2" 
               alt="IVESTRON"
-              className="h-auto w-full"
+              className="w-full h-12"
             />
           </div>
           
