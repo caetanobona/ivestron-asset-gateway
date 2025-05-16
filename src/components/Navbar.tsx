@@ -20,7 +20,7 @@ const Navbar = () => {
             <img 
               src="https://lh3.googleusercontent.com/pw/AP1GczPyOaqHmAEp168yQSP2SwWA0ldiCp-OxR9cc3P4hBok2hM3r2qdjWbbCKpMjrnJ6DMnIAGu47oPn-l_PSHyZI-MROsBVCnO9Hki2JcvkwsHHruyNoTWJ0tLi5OBqsenMsoc6sl8ayi0hdz_csde4k4=w500-h200-s-no?authuser=2" 
               alt="IVESTRON"
-              className="w-full h-12"
+              className="h-12 w-auto"
             />
           </div>
           
