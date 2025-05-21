@@ -20,4 +20,12 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    assetsInlineLimit: 0, // Ensures all assets are processed as files
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[ext]',
+      },
+    },
+  },
 }));
