@@ -30,8 +30,8 @@ const AssetCard: React.FC<AssetCardProps> = ({
     'Meta' : FaMeta
   };
 
-  function DynamicIcon({ name, ...props }) {  
-    const IconComponent = iconMap[name];  
+  function DynamicIcon({ name, ...props }: { name: string; [key: string]: any }) {  
+    const IconComponent = iconMap[name as keyof typeof iconMap];  
     if (!IconComponent) return null;  
     return <IconComponent {...props} />;  
   }
@@ -78,7 +78,7 @@ const IPhoneMockup = () => {
         <div className="w-full h-full bg-black rounded-[32px] overflow-hidden relative">
           {/* Status bar */}
           <img 
-            src="src\assets\MobileTrading.png"
+            src="/src/assets/MobileTrading.png"
             alt="" 
             className='w-full h-full bg-white'
           />

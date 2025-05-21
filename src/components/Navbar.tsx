@@ -18,7 +18,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="mr-4 lg:mr-12">
             <img 
-              src="src\assets\LogoAtualizada.png" 
+              src="/src/assets/LogoAtualizada.png" 
               alt="IVESTRON"
               className="h-10 w-auto"
             />
@@ -64,7 +64,7 @@ const Navbar = () => {
           <a href="#" className="hidden md:block text-white/80 hover:text-ivestron-green transition-colors">Acessar</a>
           <Button 
             className="bg-ivestron-green hover:bg-ivestron-green-dark text-white rounded-md px-5 py-2"
-            onClick={handleRegister()}  
+            onClick={handleRegister}  
           >
             Criar conta
           </Button>

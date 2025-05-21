@@ -67,17 +67,17 @@ const NewsCalendarSection = () => {
                 
                 <div className="space-y-0">
                   <NewsItem 
-                    flag="src\assets\ca.png" 
+                    flag="/src/assets/ca.png" 
                     title="AUD/CAD" 
                     value="0.89226"
                   />
                   <NewsItem 
-                    flag="src\assets\us.png" 
+                    flag="/src/assets/us.png" 
                     title="Walgreens Boots All" 
                     value="0.89226"
                   />
                   <NewsItem 
-                    flag="src\assets\gb.png" 
+                    flag="/src/assets/gb.png" 
                     title="United Kingdom" 
                     value="0.89226"
                   />
@@ -122,22 +122,22 @@ const NewsCalendarSection = () => {
                 
                 <div className="space-y-0">
                   <CalendarItem 
-                    flag="src\assets\ar.png" 
+                    flag="/src/assets/ar.png" 
                     title="Chegada de visitantes anuais" 
                     time="15:45"
                   />
                   <CalendarItem 
-                    flag="src\assets\ca.png" 
+                    flag="/src/assets/ca.png" 
                     title="Investimentos em títulos estrangeiros" 
                     time="16:42"
                   />
                   <CalendarItem 
-                    flag="src\assets\br.png" 
+                    flag="/src/assets/br.png" 
                     title="Investimentos em ações por estrangeiros" 
                     time="16:30"
                   />
                   <CalendarItem 
-                    flag="src\assets\us.png" 
+                    flag="/src/assets/us.png" 
                     title="Balanços de preços de casas RICS" 
                     time="15:28"
                   />

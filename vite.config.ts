@@ -27,5 +27,6 @@ export default defineConfig(({ mode }) => ({
         assetFileNames: 'assets/[name].[ext]',
       },
     },
+    copyPublicDir: true,
   },
 }));
