@@ -77,11 +77,14 @@ const IPhoneMockup = () => {
         {/* Screen */}
         <div className="w-full h-full bg-black rounded-[32px] overflow-hidden relative">
           {/* Status bar */}
-          <img 
-            src="https://lh3.googleusercontent.com/pw/AP1GczPKFmzKF9oDgI9tGYYUYBHLRk56YmXCsjN9Ql9JB4xDjGQBvmpWcWchRxL3VN7X95lDwltPzCxgAMDACmTkdJ8Rlnz7SnGWsdjLt7NjCiNPRDQu3Q=w800-h800-s-no?authuser=2" 
+          <a href="https://ibb.co/3YMgFCkJ" className='w-full h-full'>
+            <img src="https://i.ibb.co/rfcDpwvW/Mobile-Trading.png" alt="Mobile-Trading" className='w-full h-full'/>
+          </a>
+          {/* <img 
+            src="https://ibb.co/3YMgFCkJ" 
             alt="" 
             className='w-full h-full bg-white'
-          />
+          /> */}
         </div>
       </div>
 

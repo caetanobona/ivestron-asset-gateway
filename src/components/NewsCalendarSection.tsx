@@ -8,7 +8,9 @@ import { handleRegister } from '@/hooks/use-register';
 const NewsItem = ({ flag, title, value }: { flag: string, title: string, value: string }) => (
   <div className="flex items-center gap-3 py-4 border-b border-white/5">
     <div className="w-8 h-8 flex-shrink-0">
-      <img src={flag} alt="Country flag" className="w-full h-full rounded-full object-cover" />
+      <a href="https://imgbb.com/" className="w-full h-full rounded-full object-cover">
+        <img src={flag} alt="Country flag" className="w-full h-full rounded-full object-cover"/>
+      </a>
     </div>
     <div className="flex-grow">
       <p className="text-gray-200 font-medium">{title}</p>
@@ -67,17 +69,17 @@ const NewsCalendarSection = () => {
                 
                 <div className="space-y-0">
                   <NewsItem 
-                    flag="/src/assets/ca.png" 
+                    flag="https://i.ibb.co/rG8BJ4TC/ca.png" 
                     title="AUD/CAD" 
                     value="0.89226"
                   />
                   <NewsItem 
-                    flag="/src/assets/us.png" 
+                    flag="https://i.ibb.co/H9WVQW9/us.png" 
                     title="Walgreens Boots All" 
                     value="0.89226"
                   />
                   <NewsItem 
-                    flag="/src/assets/gb.png" 
+                    flag="https://i.ibb.co/m5cfkTRD/gb.png" 
                     title="United Kingdom" 
                     value="0.89226"
                   />
@@ -122,22 +124,22 @@ const NewsCalendarSection = () => {
                 
                 <div className="space-y-0">
                   <CalendarItem 
-                    flag="https://lh3.googleusercontent.com/pw/AP1GczP8AQh1tOdN0QloJfmUE2bZ-_0nFiTDTkq52s1fGbWK8S68UKqtYEVQ05p5dROvWvDldlOWZkSLjIRqvEX0HbM1znWJl9bA8IhsNhjGsY4S5R4jKA=w64-h64-s-no?authuser=2" 
+                    flag="https://i.ibb.co/sdVK2Lj7/ar.png" 
                     title="Chegada de visitantes anuais" 
                     time="15:45"
                   />
                   <CalendarItem 
-                    flag="https://lh3.googleusercontent.com/pw/AP1GczP9eCcDIpIqxMqgfnHQxmXt5N8J4JZohGnZWJvZtTzJ3WFKL20yf5uMQCPFH2qlBX-7IXdTkm2JnpnVxnMcTMpqAD8gZVACt-qn8aPM09FklUzkGQ=w64-h64-s-no?authuser=2" 
+                    flag="https://i.ibb.co/rG8BJ4TC/ca.png" 
                     title="Investimentos em títulos estrangeiros" 
                     time="16:42"
                   />
                   <CalendarItem 
-                    flag="https://lh3.googleusercontent.com/pw/AP1GczO2ZWrVEtERwu8-_ZzWLNwKMu6a_JFh9qDk8-Nh7EvI6QjC_pTaPMxYb4dA7w1NTBgK6U3bD4XWcPDU-qgzB_EcjxuQmVk0GzORQO0e4KCYXswt7w=w64-h64-s-no?authuser=2" 
+                    flag="https://i.ibb.co/jPCZ3Jd3/br.png" 
                     title="Investimentos em ações por estrangeiros" 
                     time="16:30"
                   />
                   <CalendarItem 
-                    flag="https://lh3.googleusercontent.com/pw/AP1GczMQM9JvTrVowRvj2GZVQb6iZhQ4vZPQKuCp4MNrFk-LWLmgVW0M5-b5DmXa4nZZbk3wYXPF-iQD4kIeJVPOdDOkiZY0aO4o1Mwk7IXbf3MRsXDROw=w64-h64-s-no?authuser=2" 
+                    flag="https://i.ibb.co/H9WVQW9/us.png" 
                     title="Balanços de preços de casas RICS" 
                     time="15:28"
                   />

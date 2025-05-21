@@ -17,11 +17,9 @@ const Navbar = () => {
         <div className="flex items-center">
           {/* Logo */}
           <div className="mr-4 lg:mr-12">
-            <img 
-              src="https://lh3.googleusercontent.com/pw/AP1GczNsn75s_7EapDC8_C10geQNRdq09CP7DNRdcUlLwrBI_IssP16ZPkv_0-r-joCtU_liyDasKmgYeeXzknld40PQUvbEFWPEuifH2a9BLc7eiv5BwObaVcUjmL4r8IPT1K6ts4lWFNth1MP6y--ADCk=w1024-h367-s-no?authuser=2" 
-              alt="IVESTRON"
-              className="h-10 w-auto"
-            />
+            <a href="https://imgbb.com/">
+              <img src="https://i.ibb.co/wZkdpDbT/Logo.png" alt="Logo" className="h-12 w-auto"/>
+            </a>
           </div>
           
           {/* Navigation links */}
