@@ -3,8 +3,6 @@ import { Bitcoin } from 'lucide-react';
 import { FcGoogle } from "react-icons/fc";
 import { FaMeta } from 'react-icons/fa6';
 import React from 'react';
-import { useIsMobile } from '@/hooks/use-mobile';
-import MockTradeEntry from './MockTradeEntry';
 
 interface AssetCardProps {
   iconKey: string;
@@ -80,7 +78,7 @@ const IPhoneMockup = () => {
         <div className="w-full h-full bg-black rounded-[32px] overflow-hidden relative">
           {/* Status bar */}
           <img 
-            src="https://lh3.googleusercontent.com/pw/AP1GczORWMOhkEe8h8vreG3Dk3xD187G99NA1OgIS4j9seWAROPM6_IyWOfNoDzCFp8T6p0EpSCenxjNuoCEAzaOKMl9XJc48LkV5ScRC68sybIxSKnHoJMI6_F8XURztFVJ6Nhj2jZZqlN8BZkIMDrGAoc=w707-h1532-s-no?authuser=2"
+            src="src\assets\MobileTrading.png"
             alt="" 
             className='w-full h-full bg-white'
           />
