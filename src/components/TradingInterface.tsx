@@ -78,7 +78,7 @@ const IPhoneMockup = () => {
         <div className="w-full h-full bg-black rounded-[32px] overflow-hidden relative">
           {/* Status bar */}
           <img 
-            src="/src/assets/MobileTrading.png"
+            src="https://lh3.googleusercontent.com/pw/AP1GczPKFmzKF9oDgI9tGYYUYBHLRk56YmXCsjN9Ql9JB4xDjGQBvmpWcWchRxL3VN7X95lDwltPzCxgAMDACmTkdJ8Rlnz7SnGWsdjLt7NjCiNPRDQu3Q=w800-h800-s-no?authuser=2" 
             alt="" 
             className='w-full h-full bg-white'
           />

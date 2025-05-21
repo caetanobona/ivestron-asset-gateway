@@ -122,22 +122,22 @@ const NewsCalendarSection = () => {
                 
                 <div className="space-y-0">
                   <CalendarItem 
-                    flag="/src/assets/ar.png" 
+                    flag="https://lh3.googleusercontent.com/pw/AP1GczP8AQh1tOdN0QloJfmUE2bZ-_0nFiTDTkq52s1fGbWK8S68UKqtYEVQ05p5dROvWvDldlOWZkSLjIRqvEX0HbM1znWJl9bA8IhsNhjGsY4S5R4jKA=w64-h64-s-no?authuser=2" 
                     title="Chegada de visitantes anuais" 
                     time="15:45"
                   />
                   <CalendarItem 
-                    flag="/src/assets/ca.png" 
+                    flag="https://lh3.googleusercontent.com/pw/AP1GczP9eCcDIpIqxMqgfnHQxmXt5N8J4JZohGnZWJvZtTzJ3WFKL20yf5uMQCPFH2qlBX-7IXdTkm2JnpnVxnMcTMpqAD8gZVACt-qn8aPM09FklUzkGQ=w64-h64-s-no?authuser=2" 
                     title="Investimentos em títulos estrangeiros" 
                     time="16:42"
                   />
                   <CalendarItem 
-                    flag="/src/assets/br.png" 
+                    flag="https://lh3.googleusercontent.com/pw/AP1GczO2ZWrVEtERwu8-_ZzWLNwKMu6a_JFh9qDk8-Nh7EvI6QjC_pTaPMxYb4dA7w1NTBgK6U3bD4XWcPDU-qgzB_EcjxuQmVk0GzORQO0e4KCYXswt7w=w64-h64-s-no?authuser=2" 
                     title="Investimentos em ações por estrangeiros" 
                     time="16:30"
                   />
                   <CalendarItem 
-                    flag="/src/assets/us.png" 
+                    flag="https://lh3.googleusercontent.com/pw/AP1GczMQM9JvTrVowRvj2GZVQb6iZhQ4vZPQKuCp4MNrFk-LWLmgVW0M5-b5DmXa4nZZbk3wYXPF-iQD4kIeJVPOdDOkiZY0aO4o1Mwk7IXbf3MRsXDROw=w64-h64-s-no?authuser=2" 
                     title="Balanços de preços de casas RICS" 
                     time="15:28"
                   />
