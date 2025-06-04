@@ -37,13 +37,6 @@ const SimplifiedTradingSection = () => {
               >
                 Comece Agora
               </a>
-              
-              <div className="flex items-center">
-                <div className="flex flex-col w-full">
-                  <div className="font-bold text-2xl text-center">700K<span className="text-ivestron-green">+</span></div>
-                  <div className="text-ivestron-text-gray text-sm">Usuários Investindo</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
