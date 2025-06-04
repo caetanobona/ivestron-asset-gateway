@@ -59,7 +59,9 @@ const Navbar = () => {
         <div className="flex items-center space-x-6">
           
           {/* Authentication buttons */}
-          <a href="#" className="hidden md:block text-white/80 hover:text-ivestron-green transition-colors">Acessar</a>
+          <a href="https://ivestron.com/login" className="hidden md:block text-white/80 hover:text-ivestron-green transition-colors">
+            Acessar
+          </a>
           <a 
             className="bg-ivestron-green hover:bg-ivestron-green-dark text-white text-center text-lg rounded-md py-3 w-32 shadow-md"
             href='https://ivestron.com/register'
