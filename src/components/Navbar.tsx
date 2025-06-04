@@ -60,12 +60,12 @@ const Navbar = () => {
           
           {/* Authentication buttons */}
           <a href="#" className="hidden md:block text-white/80 hover:text-ivestron-green transition-colors">Acessar</a>
-          <Button 
-            className="bg-ivestron-green hover:bg-ivestron-green-dark text-white rounded-md px-5 py-2"
-            onClick={handleRegister}  
+          <a 
+            className="bg-ivestron-green hover:bg-ivestron-green-dark text-white text-center text-lg rounded-md py-3 w-56 shadow-md"
+            href='https://ivestron.com/register'
           >
             Criar conta
-          </Button>
+          </a>
         </div>
       </div>
     </nav>
